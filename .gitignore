@@ -26,3 +26,6 @@ db/*.sqlite3
 *.swp
 *~
 .DS_Store
+
+#ignore paperclip uploaded files
+/public/system
