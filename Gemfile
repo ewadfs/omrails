@@ -25,7 +25,9 @@ gem 'devise'
 gem 'simple_form', '3.0.0.rc'
 gem 'paperclip', github: 'thoughtbot/paperclip', branch: 'rails-4'
 gem 'protected_attributes'
-
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem "certified", "~> 0.1.1"
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 

@@ -1,7 +1,6 @@
 Omrails::Application.routes.draw do
   resources :pins
 
-  devise_for :users
   get 'about' => "pages#about"
   
  root :to => 'pins#index'
@@ -9,6 +8,7 @@ Omrails::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   resources :tests
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
   # You can have the root of your site routed with "root"
 
